@@ -3,6 +3,7 @@
 <p align="center">
 <img src="./static/img/logo.jpg" width=200>
 </p>
+
 A simple conversational chatbot based on the [llama3](https://ollama.com/library/llama3) model. The interface is accessible through a webpage which uses websockets to communicate chat requests and responses.
 
 
