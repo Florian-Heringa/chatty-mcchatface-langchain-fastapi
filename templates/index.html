@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatty McChatface</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', path='styles/styles.css') }}">
+</head>
+<body>
+    <dialog id="alert-dialog">
+    </dialog>
+    <section id="main-section">
+        <div id="header-overlay">
+            <img src="{{ url_for('static', path='img/logo.jpg') }}" onclick="clearMemory()"/>
+            <h1>Chatty McChatface</h1>
+        </div>
+        <div id="form-container">
+            <form action="" onsubmit="sendMessage(event)">
+                <input type="text" id="messageText" autocomplete="off"/>
+                <button>Send</button>
+            </form>
+        </div>
+        <div id="message-container">
+            <ul id="message-list">
+            </ul>
+        </div>
+    </section>
+    <script src=" {{ url_for('static', path='scripts/script.js') }} "></script>
+</body>
+</html>
