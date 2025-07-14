@@ -25,7 +25,7 @@ A simple conversational chatbot based on the [llama3](https://ollama.com/library
 - Add multiple sessions based on ID.
 - Buttons for deleting history, starting new chat session.
 - Database for history persistence after restarting server.
-
+- Use the Langchain streaming API to display results dynamically.
 
 ### Sources
 - Image logo created with: [deepai.org](https://deepai.org/)
